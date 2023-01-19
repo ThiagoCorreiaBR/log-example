@@ -55,7 +55,7 @@ class HomeController extends Controller
         }
     }
 
-    public function neg($num1,$num2){
+    public function mult($num1,$num2){
         if(($num1<0)or($num2<0)){
             logger()->warning('Negativo');
             return 'Neg';
