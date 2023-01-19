@@ -37,4 +37,10 @@ class HomeController extends Controller
 
         return $soma;
     }
+
+    public function sub($num1,$num2){
+        $sub=$num1-$num2;
+        logger()->debug('Sub feita',['num1' => $num1, 'num2' => $num2, 'sub' => $num1-$num2]);
+        return $sub;
+    }
 }
