@@ -59,7 +59,9 @@ class HomeController extends Controller
         if(($num1<0)or($num2<0)){
             logger()->warning('Negativo');
             return 'Neg';
+        }else{
+            return 'Hello world';
         }
-        return 'Hello world!!!';
+        
     }
 }
