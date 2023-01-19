@@ -45,11 +45,11 @@ class HomeController extends Controller
     }
 
     public function div($num1,$num2){
-        $div=$num1/$num2;
         if($num2==0){
             logger()->error('Divisor zero!');
-            return "erro"
+            return "erro";
         }else{
+            $div=$num1/$num2;
             logger()->info('Div feita');
             return $div;
         }
