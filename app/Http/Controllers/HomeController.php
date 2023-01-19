@@ -50,8 +50,7 @@ class HomeController extends Controller
             logger()->error('Divisor zero!');
         }else{
             logger()->info('Div feita');
+            return $div;
         }
-
-        return $div;
     }
 }
