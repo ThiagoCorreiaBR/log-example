@@ -54,4 +54,12 @@ class HomeController extends Controller
             return $div;
         }
     }
+
+    public function neg($num1,$num2){
+        if(($num1<0)or($num2<0)){
+            logger()->warning('Negativo');
+            return 'Neg';
+        }
+        return 'Hello world!!!';
+    }
 }
